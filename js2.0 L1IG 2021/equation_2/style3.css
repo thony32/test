@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+}
+
+#header {
+    background: #222f3e;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+#header a {
+    display: block;
+    position: relative;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin: auto;
+}
+
+li {
+    padding: 0 100px 0 100px;
+    font-size: 20%;
+}
+
+li a {
+    font-size: 70%;
+}
+
+ul:hover li a {
+    transform: scale(1.5);
+    filter: blur(5px);
+}
+
+ul li a:hover {
+    transform: scale(1.5);
+    filter: blur(0);
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff497c;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+#contenu_body{
+    text-align: center;
+}
+#contenu_body h2{
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 30px;
+}
+.introduc{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+.introduc.second{
+    margin-bottom: 40px;
+}
+span{
+    font-size: 20px;
+}
+.input_second{
+    text-align: center;
+    width: 200px;
+    border-radius:30px;
+    border: 2px solid #222f3e;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+}
+.input_second:focus{
+    border: 2px solid black;
+    background: #bdc3c7;
+}
+
+#resoudre, #effacer{
+    margin-top: 1%;
+    padding:15px 25px;
+    font-size: 24px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 9px #2980b9;
+    outline: none;
+    width: 250px;
+}
+#resoudre:hover, #effacer:hover{
+    transform: translateY(3px);
+    box-shadow: 0 6px #2980b9;
+}
+#resoudre:active, #effacer:active{
+    transform: translateY(7px);
+    box-shadow: 0 2px #2980b9;
+}
+#resultat{
+    border: 1px solid #222f3e;
+    border-radius: 20px;
+    color: white;
+    background: #222f3e;
+    font-size: 20px;
+    text-align: center;
+    width: 570px;
+    margin: auto;
+    height: 190px;
+}

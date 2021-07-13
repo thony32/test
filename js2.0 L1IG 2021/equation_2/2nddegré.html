@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="livre.jpg"/>
+    <link rel="stylesheet" href="style3.css" />
+    <title>equation 2 inconnues</title>
+  </head>
+  <body>
+    <div id="contenu">
+      <ul id="header">
+        <li><a href="../main.html">Acceuil</a></li>
+        <li><a href="../equation_2/2nddegré.html">2nd degré</a></li>
+        <li><a href="../matrice/mety.html">Matrice</a></li>
+        <li><a href="../animation/animation.html">Animation</a></li>
+        <li><a href="../Circuit Analogique/circuit.html">Circuit Analogique</a></li>
+    </ul>
+      <div id="contenu_body">
+        <h2>EQUATION DU SECOND DEGRE</h2>
+        <p class="introduc">
+          Voici un programme permettant de résoudre des équations du second
+          degré de la forme ax<sup>2</sup>+ bx + c = 0.
+        </p>
+        <p class="introduc second">
+            L'utilisateur doit remplir les cases de coefficients, les cases  laissées vides <mark>contiennent par defaut zéro(0).
+            </mark> 
+        </p>
+        <input type="number" class="input_second a" placeholder="a"><span> X<sup>2</sup> + </span>
+        <input type="number" class="input_second b" placeholder="b"><span> X + </span>
+        <input type="number" class="input_second c" placeholder="c"><span> = 0 </span>
+        <br/><br/><button id="resoudre">Resoudre</button>
+        <button id="effacer">Effacer tout</button><br/><br/>
+        <div id="resultat"><p>Resultat</p><p id="resultat_resultat"></p></div>
+      </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="js.js"></script>
+  </body>
+</html>

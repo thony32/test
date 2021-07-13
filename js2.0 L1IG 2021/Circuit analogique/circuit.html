@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="livre.jpg"/>
+    <link rel="stylesheet" href="circuit_style.css" />
+    <title>Circuit Analogique</title>
+</head>
+
+<body>
+    <div id="contenu">
+        <ul id="header">
+            <li><a href="../main.html">Acceuil</a></li>
+            <li><a href="../equation_2/main.html">2nd degré</a></li>
+            <li><a href="matrice.html">Matrice</a></li>
+            <li><a href="../animation/animation.html">Animation</a></li>
+            <li><a href="../Circuit Analogique/circuit.html">Circuit Analogique</a></li>
+        </ul>
+        <div id="Circuit">
+            <h2>Circuit Analogique</h2>
+            <p class="enonce">
+                Calculer les intensités I1, I2, I3.
+            </p>
+            <img src="schema.jpg" alt=""><br><br>
+            <label for="U">U=</label><input type="number" id="U">
+            <label for="R1">R1=</label><input type="number" id="R1">
+            <label for="R2">R2=</label><input type="number" id="R2">
+            <label for="R3">R3=</label><input type="number" id="R3"><br>
+
+
+            <button id="resoudre">RESOUDRE</button>
+            <button id="effacer">RECOMMENCER</button><br><br>
+            <div id="resultat">
+                <p>Resultat</p>
+                <p id="resultat_resultat"></p>
+            </div>
+        </div>
+    </div>
+    <script src="intensite.js"></script>
+
+    </div>
+    </body>
+    </html>
